@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações sobre você</title>
+    <style>
+        body{
+            font: #000;
+            font-size: 19px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #nome1{
+            margin-bottom: 10px;
+        }
+        #nome2{
+            margin-bottom: 10px;
+        }
+        #data{
+            margin-bottom: 10px;
+        }
+        #profissao{
+            margin-bottom: 10px;
+        }
+        #escolaridade{
+            margin-bottom: 50px;
+        }
+        #info{
+            margin-top:30px;
+        }
+    </style>
+<body>
+
+    <h1>Digite abaixo suas informações</h1>
+
+    Primeiro nome: <input type="text" id="nome1"><br>
+    Segundo nome: <input type="text" id="nome2"><br>
+    Profissão: <input type="text" id="profissao"><br>
+    Escolaridade:
+    <select id="escolaridade">
+        <option>Ensino médio Incompleto</option>
+        <option>Ensino médio Completo</option>
+        <option>Técnico</option>
+        <option>Ensino Superior Incompleto</option>
+        <option>Ensino Superior Completo</option>
+    </select><br><br>
+
+    <input type="button" value="Registrar informações" onclick="valida()"><br><br>
+
+    <div id="info">Informações</div>
+
+    <script>
+        function valida(){
+            var name1 = document.getElementById('nome1').value;
+            var name2 = document.getElementById('nome2').value;
+            var trampo = document.getElementById('profissao').value;
+            var escola = document.getElementById('escolaridade').value;  
+
+            const infohtml = `<b>Informações:<b><br><br>
+        
+            Nome:${name1} ${name2}<br>
+            Profissão: ${trampo}<br>
+            Nível de Escolaridade: ${escola}`
+            
+        window.document.getElementById('info').innerHTML = infohtml
+        }
+    </script>
+</body>
+</html>
