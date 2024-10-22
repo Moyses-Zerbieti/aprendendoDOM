@@ -1,0 +1,5 @@
+ - Esse foi um projeto bem simples que eu fiz quando estava iniciando meu estudo com DOM e Javascript em geral
+ - Gostei bastante do resultando e por conta desse material eu consegui me desenvolver bastante na linguagem
+ - Caso tenha alguma sujestão de melhoria ou estudo vou deixar meus contatos abaixo:
+ - Obrigado pela atenção
+ - Linkedin: https://www.linkedin.com/in/moyses-zerbieti/
